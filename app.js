@@ -1,15 +1,24 @@
 //Require necessary dependencies
 const express = require('express');
+
+//Require data file
+//const { data } = require('/data/data.json');
+
+//Create express app
 const app = express();
 
 //View engine setup
 app.set('view engine', 'pug');
 
-//Routes
-router.get('/', (req, res) => {
-    // Log statement to indicate that this function is running
-    console.log('Handling request to root or "home" route, "/"');
-  });
+//Let app access routes
+const mainRoutes = require('./routes');
+const aboutRoutes = require('./routes/about');
+const projectRoutes = require('./routes/projects');
+
+//Create middleware
+app.use(mainRoutes);
+app.use('/about', aboutRoutes);
+app.use('/projects', projectRoutes);
 
 // Turn on Express server
 app.listen(3000, () => {
