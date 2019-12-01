@@ -7,6 +7,9 @@ const express = require('express');
 //Create express app
 const app = express();
 
+//Set static assets
+app.use('/static', express.static('public'))
+
 //View engine setup
 app.set('view engine', 'pug');
 
