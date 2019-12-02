@@ -14,7 +14,7 @@ router.get('/projects/:id', function(req, res, next) {
     const proj = projects.find( ({ id }) => id === +profileId );
     //console.log(proj);
     if (proj) {
-      // 2. Pass the recipe data to the 'recipe' template
+      // 2. Pass the data to template
       res.render('project', { proj });
     } else {
       console.log("ooopies");
