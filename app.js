@@ -20,6 +20,19 @@ app.use(mainRoutes);
 app.use('/about', aboutRoutes);
 app.use('/projects', projectRoutes);
 
+//404 error handling
+app.use((req, res, next) => {
+  const err = new Error('404 Page Not Found!');
+  err.status = 404;
+  next(err);
+})
+
+app.use((err, req, res, next) => {
+  res.locals.error = err;
+  res.status(err.status);
+  res.render('error');
+});
+
 // Turn on Express server
 app.listen(3000, () => {
     console.log('Server listening on port 3000');
