@@ -1,9 +1,6 @@
 //Require necessary dependencies
 const express = require('express');
 
-//Require data file
-//const { data } = require('/data/data.json');
-
 //Create express app
 const app = express();
 

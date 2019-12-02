@@ -3,29 +3,29 @@
       {
         "id": 1,
         "project_name": "Random Quote Generator",
-        "description": "A RQG!",
+        "description": "A quote generator that pulls randomly from an array of data.",
         "technologies": ["HTML", "CSS", "JavaScript"],
-        "live_link": "link here",
+        "live_link": "https://rdrayer.github.io/Random-Quote-Generator/",
         "github_link": "https://github.com/rdrayer/Random-Quote-Generator",
-        "image_url": "https://cdn.pixabay.com/photo/2016/05/26/16/27/baking-1417494_960_720.jpg"
+        "image_url": ["static/images/rqg1.jpg", "static/images/rqg2.jpg","static/images/rqgthumb.jpeg" ]
       },
-      {
+      { 
         "id": 2,
         "project_name": "List Pagination and Filtering",
-        "description": "List Pagination and Filtering!",
+        "description": "Displays a set of students per page. Used for loops to accomplish this and added event listeners tied to user clicks.",
         "technologies": ["HTML", "CSS", "JavaScript"],
-        "live_link": "link here",
+        "live_link": "https://rdrayer.github.io/List-Pagination-and-Filtering/",
         "github_link": "https://github.com/rdrayer/List-Pagination-and-Filtering",
-        "image_url": "https://cdn.pixabay.com/photo/2012/02/28/00/47/berliner-17811_960_720.jpg"
+        "image_url": ["static/images/lpf1.jpg", "static/images/lpf2.jpg","static/images/lpfthumb.jpeg"]
       },
       {
         "id": 3,
         "project_name": "Interactive Form",
-        "description": "Interactive Form!",
+        "description": "Created a basic form via JavaScript to pull user input. Used regex to disallow the user from inputting incorrect formatting for email addresses and credit card info.",
         "technologies": ["HTML", "CSS", "JavaScript"],
-        "live_link": "link here",
+        "live_link": "https://rdrayer.github.io/Interactive-Form/",
         "github_link": "https://github.com/rdrayer/Interactive-Form",
-        "image_url": "https://cdn.pixabay.com/photo/2016/04/11/21/32/pumpkin-1323131_960_720.jpg"
+        "image_url": ["static/images/if1.jpg", "static/images/if2.jpg", "static/images/ifthumb.jpeg"]
       }
     ]
   }

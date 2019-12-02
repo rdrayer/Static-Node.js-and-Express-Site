@@ -9,14 +9,13 @@ router.get('/', (req, res) => {
     //console.log(projects[0].project_name);
 }); 
 
-
 router.get('/projects/:id', function(req, res, next) {
     const profileId = req.params.id;
     const proj = projects.find( ({ id }) => id === +profileId );
-    console.log(proj);
+    //console.log(proj);
     if (proj) {
       // 2. Pass the recipe data to the 'recipe' template
-      res.render('proj', { proj });
+      res.render('project', { proj });
     } else {
       console.log('404err');//res.sendStatus(404);
     }

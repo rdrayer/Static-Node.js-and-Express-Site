@@ -23,6 +23,6 @@ block content
 
         .cell
           a(href=`/projects/${proj.id}`)
-            img.thumbnail(src='https://placehold.it/550x550')
-            h5= projects.project_name
+            img.thumbnail(src=`/` + proj.image_url[2])
+            h5= proj.project_name
       
